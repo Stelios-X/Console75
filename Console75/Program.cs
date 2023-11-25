@@ -6,9 +6,13 @@ using System;
 using Console75;
 
 //Test Case
-int[] nums = { 7, 6, 4, 3, 1 };
+int[] nums = { -1,1,0,-3,3};
 
-Stocks stocks = new Stocks();
-stocks.MaxProfit(nums);
+SelfProduct selfProduct = new SelfProduct();
+int[] arr = selfProduct.SelfProductSol(nums);
+foreach (var item in arr) 
+{
+    Console.Write($" ==>{item}");
+}
 
-
+//var ans = 

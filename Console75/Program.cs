@@ -6,13 +6,15 @@ using System;
 using Console75;
 
 //Test Case
-int[] nums = { -1,1,0,-3,3};
+int[] nums = { 0, 0, 0 };
 
-SelfProduct selfProduct = new SelfProduct();
-int[] arr = selfProduct.SelfProductSol(nums);
-foreach (var item in arr) 
+ThreeSum ts = new ThreeSum();
+ts.ThreeSumSol(nums);
+
+/*
+foreach (var item in ans) 
 {
     Console.Write($" ==>{item}");
 }
-
+*/
 //var ans = 

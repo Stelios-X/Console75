@@ -45,7 +45,7 @@ namespace Console75
                     }   
                 }
             }
-            Console.WriteLine("result.Count: " + result.Count);
+            //Console.WriteLine("result.Count: " + result.Count);
             return result;
         }   
 

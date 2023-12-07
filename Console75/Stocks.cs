@@ -10,6 +10,7 @@ namespace Console75
     {
         //Daisy001 solution 
         //Time Complexity O(n)
+        //Space Complexity O(1)
         public int MaxProfit(int[] prices)
         {
             int maxProfit = 0;
@@ -25,7 +26,7 @@ namespace Console75
                     maxProfit = prices[i] - minPrice;
                 }
             }
-            Console.Write(maxProfit);
+            //Console.Write(maxProfit);
             return maxProfit;
         }
 

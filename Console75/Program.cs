@@ -6,10 +6,12 @@ using System;
 using Console75;
 
 //Test Case
-int[] nums = { 0, 0, 0 };
+int[] nums = { 10, 2, -5 };
+//uint nex = 00000000000000000000000010000000;
 
-ThreeSum ts = new ThreeSum();
-ts.ThreeSumSol(nums);
+
+AsteroidCollision ac = new AsteroidCollision();
+ac.AsteroidCollisionSol(nums);
 
 /*
 foreach (var item in ans) 

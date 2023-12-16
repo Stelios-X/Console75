@@ -39,7 +39,8 @@ namespace Console75
             return stack.ToArray().Reverse().ToArray();
         }*/
 
-
+        //Time Complexity O(n)
+        //Space Complexity O(n)
         public int[] AsteroidCollisionSol(int[] asteroids)
         {
             Stack<int> stack = new Stack<int>();

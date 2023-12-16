@@ -6,15 +6,18 @@ using System;
 using Console75;
 
 //Test Case
-int[] nums = { 10, 2, -5 };
-//uint nex = 00000000000000000000000010000000;
+int[] numz = {2,3,6,7};
+int target = 7;
 
+//string[] wordDictNew = {"leet","code"};
 
-AsteroidCollision ac = new AsteroidCollision();
-ac.AsteroidCollisionSol(nums);
+CombiSum combiSum = new CombiSum();
+combiSum.CombiSumSol(numz, target);
+
+//var res = combiSum.CombiSumSol(numz, target);
 
 /*
-foreach (var item in ans) 
+foreach (var item in res) 
 {
     Console.Write($" ==>{item}");
 }

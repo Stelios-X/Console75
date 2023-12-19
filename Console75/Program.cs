@@ -6,16 +6,16 @@ using System;
 using Console75;
 
 //Test Case
-int[][] edges = [[1, 3], [6, 9]];
+int[][] edges = [[1, 3], [2, 6], [8, 10], [15, 18]];
 int[] page = [2, 5];
 int x = 5;
 
 //string[] wordDictNew = {"leet","code"};
 
-InsertInterval insertInterval = new InsertInterval();
-var xx = insertInterval.InsertIntervalSol( edges, page);
+MergeInterval mergeInterval = new MergeInterval();  
+var xx = mergeInterval.MergeIntervalSol( edges);
 
-//Console.WriteLine(xx.ToString());
+Console.WriteLine(xx.ToString());
 
 
 //var res = combiSum.CombiSumSol(numz, target);

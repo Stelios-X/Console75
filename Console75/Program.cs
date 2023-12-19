@@ -6,15 +6,15 @@ using System;
 using Console75;
 
 //Test Case
-int[] numz = [0, 3, 7, 2, 5, 8, 4, 6, 0, 1];
+string[] numz = ["z", "x", "z"];
 int x = 2;
 
 //string[] wordDictNew = {"leet","code"};
 
-LongestCons longestCons = new LongestCons();
-longestCons.LongestConsSol(numz);
+AlienDictionary alien = new AlienDictionary();
+var xx = alien.AlienDicSol(numz);
 
-//Console.WriteLine(mmm.ToString());
+Console.WriteLine(xx);
 
 
 //var res = combiSum.CombiSumSol(numz, target);

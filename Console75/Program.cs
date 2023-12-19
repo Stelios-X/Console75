@@ -6,14 +6,14 @@ using System;
 using Console75;
 
 //Test Case
-int[][] edges = [[1, 3], [2, 6], [8, 10], [15, 18]];
+int[][] edges = [[1, 2], [2, 3]];
 int[] page = [2, 5];
 int x = 5;
 
 //string[] wordDictNew = {"leet","code"};
 
-MergeInterval mergeInterval = new MergeInterval();  
-var xx = mergeInterval.MergeIntervalSol( edges);
+NonOverlapIntervals nonOverlapIntervals = new NonOverlapIntervals();  
+var xx = nonOverlapIntervals.EraseOverlapInt( edges);
 
 Console.WriteLine(xx.ToString());
 

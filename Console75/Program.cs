@@ -6,13 +6,13 @@ using System;
 using Console75;
 
 //Test Case
-string[] numz = ["z", "x", "z"];
-int x = 2;
+int[][] edges = [[0, 1], [2, 3]];
+int x = 4;
 
 //string[] wordDictNew = {"leet","code"};
 
-AlienDictionary alien = new AlienDictionary();
-var xx = alien.AlienDicSol(numz);
+GraphValidTree graphValidTree = new GraphValidTree();
+var xx = graphValidTree.GraphValidTreeSol(x, edges);
 
 Console.WriteLine(xx);
 

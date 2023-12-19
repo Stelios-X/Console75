@@ -8,8 +8,10 @@ namespace Console75
 {
     public class AlienDictionary
     {
-        //Time Complexity
-        //Space Complexity
+        //Time Complexity O(C), where C is the total number of characters in the input words.
+        //Space Complexity O(1) because the size of the alphabet is constant (26 lowercase letters in English),
+        //and the space used by the dictionaries is proportional to the size of the alphabet, not the number of characters in the words.
+        //
         //There is an alien language that employs the English alphabet. Unknown to you is the order of the letters.
         //You are given a list of strings, words form the dictionary where words are sorted lexicographically according to the rules of
         //the alien language. Derive the order of the letters in this language and return it. If a given input is invalid,

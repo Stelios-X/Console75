@@ -6,21 +6,23 @@ using System;
 using Console75;
 
 //Test Case
-int[][] edges = [];
+int[][] edges = [[1, 3], [6, 9]];
+int[] page = [2, 5];
 int x = 5;
 
 //string[] wordDictNew = {"leet","code"};
 
-No_OfConnComponents no_OfConnComponents = new No_OfConnComponents();
-var xx = no_OfConnComponents.No_OfConnComponentsSol(x, edges);
+InsertInterval insertInterval = new InsertInterval();
+var xx = insertInterval.InsertIntervalSol( edges, page);
 
-Console.WriteLine(xx);
+//Console.WriteLine(xx.ToString());
 
 
 //var res = combiSum.CombiSumSol(numz, target);
 
 /*
-foreach (var item in res) 
+xx.ToString();
+foreach (var item in xx) 
 {
     Console.Write($" ==>{item}");
 }

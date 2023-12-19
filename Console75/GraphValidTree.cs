@@ -8,8 +8,8 @@ namespace Console75
 {
     public class GraphValidTree
     {
-        /*Time Complexity
-         * Space Complexity
+        /*Time Complexity  O(n), where n is the number of nodes in the graph. This is because we are visiting each node exactly once.
+         * Space Complexity O(n), due to the space required for the visited hash set and the recursive call stack in the worst case.
          * 
          * 
          * 

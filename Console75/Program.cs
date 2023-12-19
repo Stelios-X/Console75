@@ -6,13 +6,13 @@ using System;
 using Console75;
 
 //Test Case
-int[][] edges = [[0, 1], [2, 3]];
-int x = 4;
+int[][] edges = [];
+int x = 5;
 
 //string[] wordDictNew = {"leet","code"};
 
-GraphValidTree graphValidTree = new GraphValidTree();
-var xx = graphValidTree.GraphValidTreeSol(x, edges);
+No_OfConnComponents no_OfConnComponents = new No_OfConnComponents();
+var xx = no_OfConnComponents.No_OfConnComponentsSol(x, edges);
 
 Console.WriteLine(xx);
 

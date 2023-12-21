@@ -6,14 +6,14 @@ using System;
 using Console75;
 
 //Test Case
-int[][] edges = [[7, 10], [2, 4]];
+ListNode edges = '1-> 2 -> 3 -> 4 -> 5';
 int[] page = [2, 5];
 int x = 5;
 
 //string[] wordDictNew = {"leet","code"};
 
-MeetingRoom_II meetingRoom_I = new MeetingRoom_II(); 
-var xx = meetingRoom_I.MeetingRoom_IISol( edges);
+ReverseList reverseList = new ReverseList(); 
+var xx = reverseList.ReverseListSol( edges);
 
 Console.WriteLine(xx.ToString());
 

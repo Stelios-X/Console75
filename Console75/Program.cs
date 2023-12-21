@@ -12,11 +12,11 @@ int[][] page = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
 
 //string[] wordDictNew = {"leet","code"};
 
-SpiralMatrix sm = new SpiralMatrix();
+RotateImage sm = new RotateImage();
 
-var xx = sm.SpiralMatrixSol( page);
+//var xx = sm.SpiralMatrixSol( page);
 
-Console.WriteLine(xx.ToString());
+//Console.WriteLine(xx.ToString());
 
 
 //var res = combiSum.CombiSumSol(numz, target);
@@ -29,3 +29,13 @@ foreach (var item in xx)
 }
 */
 //var ans = 
+
+
+/*
+int[][] matrix1 = {
+            new int[] {1,2,3},
+            new int[] {4,5,6},
+            new int[] {7,8,9}
+        };
+sm.RotateImageSol(matrix1);
+PrintMatrix(matrix1);*/

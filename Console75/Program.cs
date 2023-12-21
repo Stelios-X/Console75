@@ -7,15 +7,16 @@ using Console75;
 
 //Test Case
 //ListNode edges = '1-> 2 -> 3 -> 4 -> 5';
-//ListNoder page = [[1, 4, 5], [1, 3, 4], [2, 6]];
+int[][] page = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
 //int x = 5;
 
 //string[] wordDictNew = {"leet","code"};
 
-//MergedK_List mergedK_List = new MergedK_List(); 
-//var xx = mergedK_List.MergedK_ListSol( page);
+SpiralMatrix sm = new SpiralMatrix();
 
-//Console.WriteLine(xx.ToString());
+var xx = sm.SpiralMatrixSol( page);
+
+Console.WriteLine(xx.ToString());
 
 
 //var res = combiSum.CombiSumSol(numz, target);

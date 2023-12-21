@@ -12,8 +12,8 @@ int x = 5;
 
 //string[] wordDictNew = {"leet","code"};
 
-MeetingRoom_I meetingRoom_I = new MeetingRoom_I(); 
-var xx = meetingRoom_I.MeetingRoom_ISol( edges);
+MeetingRoom_II meetingRoom_I = new MeetingRoom_II(); 
+var xx = meetingRoom_I.MeetingRoom_IISol( edges);
 
 Console.WriteLine(xx.ToString());
 

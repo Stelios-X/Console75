@@ -7,17 +7,18 @@ using Console75;
 
 //Test Case
 //ListNode edges = '1-> 2 -> 3 -> 4 -> 5';
-int[][] page = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
-string x = "bbbbb";
+int page = 2;
+string x = "abcabc";
 
-LongestSubString longestSubString = new LongestSubString();
+
+CharacterReplacement replacement = new CharacterReplacement();
 //longestSubString.LongestSubStringSol(x);
 
 //string[] wordDictNew = {"leet","code"};
 
-RotateImage sm = new RotateImage();
+//RotateImage sm = new RotateImage();
 
-var xx = longestSubString.LongestSubStringSol(x);
+var xx = replacement.CharacterReplacementSol(x,page);
 
 Console.WriteLine(xx.ToString());
 

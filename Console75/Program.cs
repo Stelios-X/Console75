@@ -7,18 +7,18 @@ using Console75;
 
 //Test Case
 //ListNode edges = '1-> 2 -> 3 -> 4 -> 5';
-string t = "a";
-string s = "a";
+string t = "car";
+string s = "rat";
 
 
-MinWindowSub minWindowSub = new MinWindowSub();
+ValidAnagram validAnagram = new ValidAnagram();
 //longestSubString.LongestSubStringSol(x);
 
 //string[] wordDictNew = {"leet","code"};
 
 //RotateImage sm = new RotateImage();
 
-var xx = minWindowSub.MinWindowSubSol(s, t);
+var xx = validAnagram.ValidAnagramSol(s, t);
 
 Console.WriteLine(xx.ToString());
 

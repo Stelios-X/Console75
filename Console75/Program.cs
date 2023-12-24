@@ -7,18 +7,18 @@ using Console75;
 
 //Test Case
 //ListNode edges = '1-> 2 -> 3 -> 4 -> 5';
-int page = 2;
-string x = "abcabc";
+string t = "a";
+string s = "a";
 
 
-CharacterReplacement replacement = new CharacterReplacement();
+MinWindowSub minWindowSub = new MinWindowSub();
 //longestSubString.LongestSubStringSol(x);
 
 //string[] wordDictNew = {"leet","code"};
 
 //RotateImage sm = new RotateImage();
 
-var xx = replacement.CharacterReplacementSol(x,page);
+var xx = minWindowSub.MinWindowSubSol(s, t);
 
 Console.WriteLine(xx.ToString());
 

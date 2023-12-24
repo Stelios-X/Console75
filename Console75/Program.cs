@@ -8,10 +8,10 @@ using Console75;
 //Test Case
 //ListNode edges = '1-> 2 -> 3 -> 4 -> 5';
 string[] t = ["eat", "tea", "tan", "ate", "nat", "bat"];
-string s = "rat";
+string s = "(]";
 
 
-GroupAnagram groupAnagram = new GroupAnagram();
+ValidParenthesis validParenthesis = new ValidParenthesis();
 
 
 
@@ -21,9 +21,9 @@ GroupAnagram groupAnagram = new GroupAnagram();
 
 //RotateImage sm = new RotateImage();
 
-//var xx = groupAnagram.GroupAnagramSol(t);
+var xx = validParenthesis.ValidParenthesisSol(s);
 
-//Console.WriteLine(xx.ToString());
+Console.WriteLine(xx.ToString());
 //Console.WriteLine(xx.ToString());
 
 

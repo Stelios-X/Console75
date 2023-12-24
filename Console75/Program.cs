@@ -8,10 +8,10 @@ using Console75;
 //Test Case
 //ListNode edges = '1-> 2 -> 3 -> 4 -> 5';
 string[] t = ["eat", "tea", "tan", "ate", "nat", "bat"];
-string s = "(]";
+string s = "race a car";
 
 
-ValidParenthesis validParenthesis = new ValidParenthesis();
+ValidPalindrome validParenthesis = new ValidPalindrome();
 
 
 
@@ -21,7 +21,7 @@ ValidParenthesis validParenthesis = new ValidParenthesis();
 
 //RotateImage sm = new RotateImage();
 
-var xx = validParenthesis.ValidParenthesisSol(s);
+var xx = validParenthesis.ValidPalindromeSol(s);
 
 Console.WriteLine(xx.ToString());
 //Console.WriteLine(xx.ToString());

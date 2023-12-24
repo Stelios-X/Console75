@@ -7,27 +7,31 @@ using Console75;
 
 //Test Case
 //ListNode edges = '1-> 2 -> 3 -> 4 -> 5';
-string t = "car";
+string[] t = ["eat", "tea", "tan", "ate", "nat", "bat"];
 string s = "rat";
 
 
-ValidAnagram validAnagram = new ValidAnagram();
+GroupAnagram groupAnagram = new GroupAnagram();
+
+
+
 //longestSubString.LongestSubStringSol(x);
 
 //string[] wordDictNew = {"leet","code"};
 
 //RotateImage sm = new RotateImage();
 
-var xx = validAnagram.ValidAnagramSol(s, t);
+//var xx = groupAnagram.GroupAnagramSol(t);
 
-Console.WriteLine(xx.ToString());
+//Console.WriteLine(xx.ToString());
+//Console.WriteLine(xx.ToString());
 
 
 //var res = combiSum.CombiSumSol(numz, target);
 
-/*
-xx.ToString();
-foreach (var item in xx) 
+
+//xx.ToString();
+/*foreach (var item in xx) 
 {
     Console.Write($" ==>{item}");
 }

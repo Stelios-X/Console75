@@ -11,9 +11,15 @@ string[] t = ["eat", "tea", "tan", "ate", "nat", "bat"];
 string s = "racecar";
 
 
-PalindromicSubstring ps = new PalindromicSubstring();
+EncodeDecode ed = new EncodeDecode();
 
-
+List<string> input1 = new List<string> { "abc", "123" };
+string encoded1 = ed.Encode(input1);
+List<string> decoded1 = ed.Decode(encoded1);
+Console.WriteLine("Example 1:");
+Console.WriteLine("Encoded: " + encoded1);
+Console.WriteLine("Decoded: " + string.Join(", ", decoded1));
+Console.WriteLine();
 
 //longestSubString.LongestSubStringSol(x);
 
@@ -21,9 +27,9 @@ PalindromicSubstring ps = new PalindromicSubstring();
 
 //RotateImage sm = new RotateImage();
 
-var xx = ps.PalindromicSubstringSol(s);
+//var xx = ps.PalindromicSubstringSol(s);
 
-Console.WriteLine(xx.ToString());
+//Console.WriteLine(xx.ToString());
 //Console.WriteLine(xx.ToString());
 
 

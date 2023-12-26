@@ -8,10 +8,10 @@ using Console75;
 //Test Case
 //ListNode edges = '1-> 2 -> 3 -> 4 -> 5';
 string[] t = ["eat", "tea", "tan", "ate", "nat", "bat"];
-string s = "cbbd";
+string s = "racecar";
 
 
-LongestPalindrome longestPalindrome = new LongestPalindrome();
+PalindromicSubstring ps = new PalindromicSubstring();
 
 
 
@@ -21,7 +21,7 @@ LongestPalindrome longestPalindrome = new LongestPalindrome();
 
 //RotateImage sm = new RotateImage();
 
-var xx = longestPalindrome.LongestPalindromeSol(s);
+var xx = ps.PalindromicSubstringSol(s);
 
 Console.WriteLine(xx.ToString());
 //Console.WriteLine(xx.ToString());

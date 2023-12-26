@@ -8,10 +8,10 @@ using Console75;
 //Test Case
 //ListNode edges = '1-> 2 -> 3 -> 4 -> 5';
 string[] t = ["eat", "tea", "tan", "ate", "nat", "bat"];
-string s = "race a car";
+string s = "cbbd";
 
 
-ValidPalindrome validParenthesis = new ValidPalindrome();
+LongestPalindrome longestPalindrome = new LongestPalindrome();
 
 
 
@@ -21,7 +21,7 @@ ValidPalindrome validParenthesis = new ValidPalindrome();
 
 //RotateImage sm = new RotateImage();
 
-var xx = validParenthesis.ValidPalindromeSol(s);
+var xx = longestPalindrome.LongestPalindromeSol(s);
 
 Console.WriteLine(xx.ToString());
 //Console.WriteLine(xx.ToString());

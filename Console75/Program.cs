@@ -11,15 +11,19 @@ string[] t = ["eat", "tea", "tan", "ate", "nat", "bat"];
 string s = "racecar";
 
 
-EncodeDecode ed = new EncodeDecode();
+MaxDepth ed = new MaxDepth();
 
-List<string> input1 = new List<string> { "abc", "123" };
-string encoded1 = ed.Encode(input1);
-List<string> decoded1 = ed.Decode(encoded1);
-Console.WriteLine("Example 1:");
-Console.WriteLine("Encoded: " + encoded1);
-Console.WriteLine("Decoded: " + string.Join(", ", decoded1));
-Console.WriteLine();
+TreeNode root1 = new TreeNode(3)
+{
+    left = new TreeNode(9),
+    right = new TreeNode(20)
+    {
+        left = new TreeNode(15),
+        right = new TreeNode(7)
+    }
+};
+int result1 = ed.MaxDepthSol(root1);
+Console.WriteLine("Example 1: " + result1);
 
 //longestSubString.LongestSubStringSol(x);
 

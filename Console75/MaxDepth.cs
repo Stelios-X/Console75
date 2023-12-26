@@ -9,10 +9,10 @@ namespace Console75
     public class MaxDepth
     {
         /*
-         *Time Complexity O(n), where n is the number of nodes in the binary tree. This is because we visit each node exactly once.
+         *Time Complexity O(N), where N is the number of nodes in the binary tree. The algorithm visits each node once.
          *
-         *Space Complexity  O(h), where h is the height of the binary tree. This is because the maximum number of function calls on
-         *the call stack at any given time is equal to the height of the binary tree. 
+         *Space ComplexityO(H), where H is the height of the binary tree. In the worst case (a skewed tree), 
+         *the space complexity is O(N). In the best case (a balanced tree), the space complexity is O(log N). 
          *
          *Given the root of a binary tree, return its maximum depth. A binary tree’s maximum depth is the number of nodes along 
          *the longest path from the root node down to the farthest leaf node.
@@ -20,21 +20,19 @@ namespace Console75
          *The problem can be solved using recursion. We can calculate the maximum depth of the left and right subtrees recursively
          *and return the maximum of the two plus one (for the root node). If the root node is null, we return 0.
          */
-        public int MaxDepthSol(TreeNode root)  //There's an external class TreeNode
+        public int MaxDepthSol(TreeNode root)
         {
-            //If the root node is null, return 0
-            if (root == null) 
+            if (root == null)
             {
-                return 0;
+                return 0; // If the root is null, the depth is 0.
             }
 
-            //Calculate the maximum depth of the left and right subtrees recusively
+            // Recursively calculate the depth of the left and right subtrees
             int leftDepth = MaxDepthSol(root.left);
             int rightDepth = MaxDepthSol(root.right);
 
-            //Return the maximumof the two plus one(for the root node)
+            // The maximum depth is the maximum of the left and right subtree depths, plus 1 for the current level.
             return Math.Max(leftDepth, rightDepth) + 1;
-
         }
     }
 }

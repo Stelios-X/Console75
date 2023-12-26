@@ -11,20 +11,20 @@ string[] t = ["eat", "tea", "tan", "ate", "nat", "bat"];
 string s = "racecar";
 
 
-MaxDepth ed = new MaxDepth();
+SameTree ed = new SameTree();
 
-TreeNode root1 = new TreeNode(3)
+TreeNode tree3 = new TreeNode(1)
 {
-    left = new TreeNode(9),
-    right = new TreeNode(20)
-    {
-        left = new TreeNode(15),
-        right = new TreeNode(7)
-    }
+    left = new TreeNode(2),
+    right = new TreeNode(1)
 };
-int result1 = ed.MaxDepthSol(root1);
-Console.WriteLine("Example 1: " + result1);
-
+TreeNode tree4 = new TreeNode(1)
+{
+    left = new TreeNode(1),
+    right = new TreeNode(2)
+};
+bool result2 = ed.SameTreeSol(tree3, tree4);
+Console.WriteLine("Example 2: " + result2);
 //longestSubString.LongestSubStringSol(x);
 
 //string[] wordDictNew = {"leet","code"};

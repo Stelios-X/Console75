@@ -11,25 +11,17 @@ string[] t = ["eat", "tea", "tan", "ate", "nat", "bat"];
 string s = "racecar";
 
 
-InvertBinaryTree ed = new InvertBinaryTree();
+TreeMaxPathSum ed = new TreeMaxPathSum();
 // Example 1
-TreeNode tree1 = new TreeNode(4)
+TreeNode tree1 = new TreeNode(1)
 {
-    left = new TreeNode(2)
-    {
-        left = new TreeNode(1),
-        right = new TreeNode(3)
-    },
-    right = new TreeNode(7)
-    {
-        left = new TreeNode(6),
-        right = new TreeNode(9)
-    }
+    left = new TreeNode(2),
+    right = new TreeNode(3)
 };
-TreeNode invertedTree1 = ed.InvertTreeSol(tree1);
-Console.WriteLine("Example 1:");
-PrintTree(invertedTree1);
-Console.WriteLine();
+int result1 = ed.MaxPathSum(tree1);
+Console.WriteLine("Example 1: " + result1);
+
+
 //longestSubString.LongestSubStringSol(x);
 
 //string[] wordDictNew = {"leet","code"};

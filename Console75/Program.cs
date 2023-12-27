@@ -11,17 +11,28 @@ string[] t = ["eat", "tea", "tan", "ate", "nat", "bat"];
 string s = "racecar";
 
 
-SmallestElement ed = new SmallestElement();
+AncestorBinarySearch ed = new AncestorBinarySearch();
 // Example 1
-TreeNode tree1 = new TreeNode(3)
+TreeNode tree1 = new TreeNode(6)
 {
-    left = new TreeNode(1)
+    left = new TreeNode(2)
     {
-        right = new TreeNode(2)
+        left = new TreeNode(0),
+        right = new TreeNode(4)
+        {
+            left = new TreeNode(3),
+            right = new TreeNode(5)
+        }
     },
-    right = new TreeNode(4)
+    right = new TreeNode(8)
+    {
+        left = new TreeNode(7),
+        right = new TreeNode(9)
+    }
 };
-Console.WriteLine("Example 1: " + ed.KthSmallest(tree1, 1));
+TreeNode p1 = tree1.left;
+TreeNode q1 = tree1.right;
+Console.WriteLine("Example 1: " + ed.LowestCommonAncestor(tree1, p1, q1).val);
 
 //longestSubString.LongestSubStringSol(x);
 

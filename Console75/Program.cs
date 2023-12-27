@@ -11,23 +11,14 @@ string[] t = ["eat", "tea", "tan", "ate", "nat", "bat"];
 string s = "racecar";
 
 
-SubtreeOfTree ed = new SubtreeOfTree();
+ConstructBinTree ed = new ConstructBinTree();
 // Example 1
-TreeNode s1 = new TreeNode(3)
-{
-    left = new TreeNode(4)
-    {
-        left = new TreeNode(1),
-        right = new TreeNode(2)
-    },
-    right = new TreeNode(5)
-};
-TreeNode t1 = new TreeNode(4)
-{
-    left = new TreeNode(1),
-    right = new TreeNode(2)
-};
-Console.WriteLine("Example 1: " + ed.IsSubtree(s1, t1));
+int[] preorder1 = { 3, 9, 20, 15, 7 };
+int[] inorder1 = { 9, 3, 15, 20, 7 };
+TreeNode result1 = ed.BuildTree(preorder1, inorder1);
+Console.WriteLine("Example 1:");
+PrintTree(result1);
+Console.WriteLine();
 
 //longestSubString.LongestSubStringSol(x);
 

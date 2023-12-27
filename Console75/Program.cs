@@ -11,15 +11,22 @@ string[] t = ["eat", "tea", "tan", "ate", "nat", "bat"];
 string s = "racecar";
 
 
-TreeMaxPathSum ed = new TreeMaxPathSum();
+SerializeDeserialize ed = new SerializeDeserialize();
 // Example 1
 TreeNode tree1 = new TreeNode(1)
 {
     left = new TreeNode(2),
     right = new TreeNode(3)
+    {
+        left = new TreeNode(4),
+        right = new TreeNode(5)
+    }
 };
-int result1 = ed.MaxPathSum(tree1);
-Console.WriteLine("Example 1: " + result1);
+string serializedTree1 = ed.serialize(tree1);
+Console.WriteLine("Example 1 (Serialized): " + serializedTree1);
+TreeNode deserializedTree1 = ed.deserialize(serializedTree1);
+Console.WriteLine("Example 1 (Deserialized): " + ed.serialize(deserializedTree1));
+Console.WriteLine();
 
 
 //longestSubString.LongestSubStringSol(x);

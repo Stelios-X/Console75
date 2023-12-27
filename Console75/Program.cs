@@ -11,23 +11,23 @@ string[] t = ["eat", "tea", "tan", "ate", "nat", "bat"];
 string s = "racecar";
 
 
-SerializeDeserialize ed = new SerializeDeserialize();
+SubtreeOfTree ed = new SubtreeOfTree();
 // Example 1
-TreeNode tree1 = new TreeNode(1)
+TreeNode s1 = new TreeNode(3)
 {
-    left = new TreeNode(2),
-    right = new TreeNode(3)
+    left = new TreeNode(4)
     {
-        left = new TreeNode(4),
-        right = new TreeNode(5)
-    }
+        left = new TreeNode(1),
+        right = new TreeNode(2)
+    },
+    right = new TreeNode(5)
 };
-string serializedTree1 = ed.serialize(tree1);
-Console.WriteLine("Example 1 (Serialized): " + serializedTree1);
-TreeNode deserializedTree1 = ed.deserialize(serializedTree1);
-Console.WriteLine("Example 1 (Deserialized): " + ed.serialize(deserializedTree1));
-Console.WriteLine();
-
+TreeNode t1 = new TreeNode(4)
+{
+    left = new TreeNode(1),
+    right = new TreeNode(2)
+};
+Console.WriteLine("Example 1: " + ed.IsSubtree(s1, t1));
 
 //longestSubString.LongestSubStringSol(x);
 

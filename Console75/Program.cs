@@ -11,14 +11,18 @@ string[] t = ["eat", "tea", "tan", "ate", "nat", "bat"];
 string s = "racecar";
 
 
-ConstructBinTree ed = new ConstructBinTree();
-// Example 1
-int[] preorder1 = { 3, 9, 20, 15, 7 };
-int[] inorder1 = { 9, 3, 15, 20, 7 };
-TreeNode result1 = ed.BuildTree(preorder1, inorder1);
-Console.WriteLine("Example 1:");
-PrintTree(result1);
-Console.WriteLine();
+ValidateSearchTree ed = new ValidateSearchTree();
+// Example 2
+TreeNode tree2 = new TreeNode(5)
+{
+    left = new TreeNode(1),
+    right = new TreeNode(4)
+    {
+        left = new TreeNode(3),
+        right = new TreeNode(6)
+    }
+};
+Console.WriteLine("Example 2: " + ed.IsValidBST(tree2));
 
 //longestSubString.LongestSubStringSol(x);
 

@@ -11,18 +11,17 @@ string[] t = ["eat", "tea", "tan", "ate", "nat", "bat"];
 string s = "racecar";
 
 
-ValidateSearchTree ed = new ValidateSearchTree();
-// Example 2
-TreeNode tree2 = new TreeNode(5)
+SmallestElement ed = new SmallestElement();
+// Example 1
+TreeNode tree1 = new TreeNode(3)
 {
-    left = new TreeNode(1),
-    right = new TreeNode(4)
+    left = new TreeNode(1)
     {
-        left = new TreeNode(3),
-        right = new TreeNode(6)
-    }
+        right = new TreeNode(2)
+    },
+    right = new TreeNode(4)
 };
-Console.WriteLine("Example 2: " + ed.IsValidBST(tree2));
+Console.WriteLine("Example 1: " + ed.KthSmallest(tree1, 1));
 
 //longestSubString.LongestSubStringSol(x);
 

@@ -11,28 +11,14 @@ string[] t = ["eat", "tea", "tan", "ate", "nat", "bat"];
 string s = "racecar";
 
 
-AncestorBinarySearch ed = new AncestorBinarySearch();
+Trie trie = new Trie();
 // Example 1
-TreeNode tree1 = new TreeNode(6)
-{
-    left = new TreeNode(2)
-    {
-        left = new TreeNode(0),
-        right = new TreeNode(4)
-        {
-            left = new TreeNode(3),
-            right = new TreeNode(5)
-        }
-    },
-    right = new TreeNode(8)
-    {
-        left = new TreeNode(7),
-        right = new TreeNode(9)
-    }
-};
-TreeNode p1 = tree1.left;
-TreeNode q1 = tree1.right;
-Console.WriteLine("Example 1: " + ed.LowestCommonAncestor(tree1, p1, q1).val);
+trie.Insert("apple");
+Console.WriteLine("Search 'apple': " + trie.Search("apple"));     // Output: true
+Console.WriteLine("Search 'app': " + trie.Search("app"));         // Output: false
+Console.WriteLine("StartsWith 'app': " + trie.StartsWith("app")); // Output: true
+trie.Insert("app");
+Console.WriteLine("Search 'app': " + trie.Search("app"));
 
 //longestSubString.LongestSubStringSol(x);
 

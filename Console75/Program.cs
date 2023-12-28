@@ -11,16 +11,18 @@ string[] t = ["eat", "tea", "tan", "ate", "nat", "bat"];
 string s = "racecar";
 
 
-WordDictionary wordDict = new WordDictionary();
+WordSearchII wordSearch = new WordSearchII();
 
 // Example 1
-wordDict.AddWord("bad");
-wordDict.AddWord("dad");
-wordDict.AddWord("mad");
-Console.WriteLine("Search 'pad': " + wordDict.Search("pad")); // Output: false
-Console.WriteLine("Search 'bad': " + wordDict.Search("bad")); // Output: true
-Console.WriteLine("Search '.ad': " + wordDict.Search(".ad")); // Output: true
-Console.WriteLine("Search 'b..': " + wordDict.Search("b..")); // Output: true
+char[][] board1 = {
+            new char[] { 'o', 'a', 'a', 'n' },
+            new char[] { 'e', 't', 'a', 'e' },
+            new char[] { 'i', 'h', 'k', 'r' },
+            new char[] { 'i', 'f', 'l', 'v' }
+        };
+string[] words1 = { "oath", "pea", "eat", "rain" };
+IList<string> result1 = wordSearch.FindWords(board1, words1);
+Console.WriteLine("Example 1: " + string.Join(", ", result1));
 
 //longestSubString.LongestSubStringSol(x);
 

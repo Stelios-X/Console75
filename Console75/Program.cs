@@ -11,14 +11,16 @@ string[] t = ["eat", "tea", "tan", "ate", "nat", "bat"];
 string s = "racecar";
 
 
-Trie trie = new Trie();
+WordDictionary wordDict = new WordDictionary();
+
 // Example 1
-trie.Insert("apple");
-Console.WriteLine("Search 'apple': " + trie.Search("apple"));     // Output: true
-Console.WriteLine("Search 'app': " + trie.Search("app"));         // Output: false
-Console.WriteLine("StartsWith 'app': " + trie.StartsWith("app")); // Output: true
-trie.Insert("app");
-Console.WriteLine("Search 'app': " + trie.Search("app"));
+wordDict.AddWord("bad");
+wordDict.AddWord("dad");
+wordDict.AddWord("mad");
+Console.WriteLine("Search 'pad': " + wordDict.Search("pad")); // Output: false
+Console.WriteLine("Search 'bad': " + wordDict.Search("bad")); // Output: true
+Console.WriteLine("Search '.ad': " + wordDict.Search(".ad")); // Output: true
+Console.WriteLine("Search 'b..': " + wordDict.Search("b..")); // Output: true
 
 //longestSubString.LongestSubStringSol(x);
 

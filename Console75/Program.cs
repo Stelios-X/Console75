@@ -11,18 +11,13 @@ string[] t = ["eat", "tea", "tan", "ate", "nat", "bat"];
 string s = "racecar";
 
 
-WordSearchII wordSearch = new WordSearchII();
+TopKFrequentElements topKFrequent = new TopKFrequentElements();
 
 // Example 1
-char[][] board1 = {
-            new char[] { 'o', 'a', 'a', 'n' },
-            new char[] { 'e', 't', 'a', 'e' },
-            new char[] { 'i', 'h', 'k', 'r' },
-            new char[] { 'i', 'f', 'l', 'v' }
-        };
-string[] words1 = { "oath", "pea", "eat", "rain" };
-IList<string> result1 = wordSearch.FindWords(board1, words1);
-Console.WriteLine("Example 1: " + string.Join(", ", result1));
+int[] nums1 = { 1, 1, 1, 2, 2, 3 };
+int k1 = 2;
+int[] result1 = topKFrequent.TopKFrequent(nums1, k1);
+Console.WriteLine("Example 1: [" + string.Join(", ", result1) + "]"); // Output: [1, 2]
 
 //longestSubString.LongestSubStringSol(x);
 
